@@ -1,5 +1,5 @@
 body {
-    background: rgb(32, 88, 230);
+    background: rgba(28, 5, 239, 0.945);
     color: rgb(45, 45, 45);
     padding: 10px;
     font-family: arial;
@@ -8,6 +8,7 @@ body {
   max-width: 800px;
     margin: auto;
     margin-bottom: 20px;
+    font-family: fantasy;
 }
 
 /* navigation menu */
@@ -38,7 +39,7 @@ a {
 
 /* main container area beneath menu */
 main {
-    background: rgb(19, 68, 230);
+    background: rgba(2, 52, 252, 0.925);
     display: flex;
 }
 .sidebar {
@@ -55,9 +56,35 @@ main {
 
 /* portfolio styles */
 #interests {
-    border: 4px rgb(250, 250, 5) ridge;
+    border: 15px hwb(60 2% 5%) ridge;
     padding: 8px;
 }
 h2, h3 {
     margin: 0px;
 }
+         /* portfolio styles */
+         .content h1 {
+            color: black;
+        }
+
+        #portfolio {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        #portfolio li {
+            background: #fdfcfc;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        #portfolio li:hover {
+            background: #1104f6;
+        }
+
+        #portfolio a {
+            text-decoration: none;
+            color: #454545;
+        }
+        
