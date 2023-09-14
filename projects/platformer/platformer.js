@@ -5,7 +5,7 @@ $(function () {
   window.addEventListener("load", loadJson);
 
   function setup() {
-    if (firstTimeSetup) {
+    if (firstTimeSetup) 
       halleImage = document.getElementById("player");
       projectileImage = document.getElementById("projectile");
       cannonImage = document.getElementById("cannon");
@@ -18,7 +18,7 @@ $(function () {
     //create walls
     createPlatform(-50, -50, canvas.width + 100, 50); //top
     createPlatform(-50, canvas.height - 10, canvas.width + 100, 200); //right
-    createPlatform(-50, -50, 50, canvas.height + 500); //bottom
+    createPlatform(-50, -50, 50, canvas.height + 50;0); //bottom
     createPlatform(canvas.width, -50, 50, canvas.height + 100);
 
     /**
@@ -43,16 +43,21 @@ $(function () {
     // Create platforms
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
-createPlatform(0,750,2000,400);
-
-
-    
+createPlatform(100,650,1350,5);
+createPlatform(0,550,1350,5);
+createPlatform(100,450,1350,5);
+createPlatform(0,350,1350,5);
+createPlatform(100,250,1350,5);
+createPlatform(0,150,1350,5);
     // TODO 2
     // Create collectables
     // You must decide on the collectable type, the x position, the y position, the gravity, and the bounce strength
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
-
+createCollectable("grace",300,100,0,0)
+createCollectable("diamond",500,200,0,0)
+createCollectable("kennedi",900,300,0,0)
+createCollectable("max",350,500,0,0)
 
 
 
@@ -61,13 +66,15 @@ createPlatform(0,750,2000,400);
     // You must decide the wall you want the cannon on, the position on the wall, and the time between shots in milliseconds
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
-
+    createCannon("left", 600, 1000,10);
+    createCannon("top",600,1000,10);
+    createCannon("bottom",600,1000,10);
 
 
 
     /////////////////////////////////////////////////
     //////////ONLY CHANGE ABOVE THIS POINT///////////
-    /////////////////////////////////////////////////
+    ///////////////////////////////-//////////////////
   }
 
   registerSetup(setup);
