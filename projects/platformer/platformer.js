@@ -49,6 +49,7 @@ createPlatform(100,450,1350,5);
 createPlatform(0,350,1350,5);
 createPlatform(100,250,1350,5);
 createPlatform(0,150,1350,5);
+createPlatform(100,450,1350,5);
     // TODO 2
     // Create collectables
     // You must decide on the collectable type, the x position, the y position, the gravity, and the bounce strength
