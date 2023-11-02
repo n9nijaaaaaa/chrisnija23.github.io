@@ -15,7 +15,7 @@
 			display: block;
 			position: absolute;
 			top: 100px;
-			left: 400px;  /* <--- Change me! */
+			left: 0px;  /* <--- Change me! */
 		}
 		.board{
 			height: 100vh;
@@ -51,7 +51,6 @@
 			function moveBoxTo(newPositionX) {
 				box.css("left", newPositionX);
 			}
-			moveboxtoBoradwidth(100px)
 			
 
 			// changes the text displayed on the Box
@@ -64,7 +63,9 @@
 			//////////////////////////////////////////////////////////////////
 			
 			// TODO 2 - Variable declarations 
-			positionX
+			var positionX = 0;
+			var points = 0;
+			var speed = 10; 
 
 			
 			/* 
@@ -72,22 +73,27 @@
 			it should move the Box to a new location. If the box drifts off the screen
 			turn it around! 
 			*/
-			function update( code block) {
-				moveBoxTo(boardWidth)
+			function update() {
+				  /* Your Code to Increase positionX by 10 HERE */
+				  positionX = positionX + 10;
+				moveBoxTo(positionX)
+				if (positionX >= boradWidth){
+					speed = speed * -1;
+				}
 
-		
-
+	
 			};
 
-			/* 
+			/*
 			This Function will be called each time the box is clicked. Each time it is called,
 			it should increase the points total, increase the speed, and move the box to
 			the left side of the screen.
 			*/
-			function handleBoxClick(100px) {
-				nameOfFunction(agruments)
-
-				
+			function handleBoxClick() {
+				positionX = 0;
+				points = points +1;
+				changeBoxText (points);
+				speed = speed + 3;
 
 
 			};
